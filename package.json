@@ -1,5 +1,5 @@
 {
-  "name": "my-app-note",
+  "name": "counter-class",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

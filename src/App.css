@@ -1,41 +1,53 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-  }
+.App {
+  text-align: center;
+  margin-top: 155px;
+}
 
 
-  .App {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
+h1 {
+  font-size: 50px;
+}
 
 
-  .note-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px 0;
-    position: relative;
-  }
-  
-  button {
-    margin-left: 20px;
-  }
 
-  
-  @media (max-width: 600px) {
-    .note-item {
-      font-size: 0.9em;
-      /* background-color: red; */
-    }
-  
-    button {
-      padding: 5px;
-    }
-  }
-  
+button {
+  margin-left: 20px;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 25px;
+  background-color: white;
+  border: 2px solid brown;
+  box-shadow: 10px 10px 8px #888888;
+}
 
-  
+
+div {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+input {
+  margin-left: 20px;
+}
+label {
+  font-size: 20px;
+}
+ul {
+  list-style-type: none ;
+  /* background-color: #f4f4f4; */
+  padding: 10px;
+  border: 1px solid #ddd;
+  max-width: 500px;
+  margin: 0 auto; 
+}
+
+li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.focused {
+  border-color: #ff0000; /* Change the border color when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.979); /* Add a shadow when focused */
+  color: #007bff;
+}

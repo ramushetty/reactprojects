@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with a name 1`] = `
+<DocumentFragment>
+  <h1>
+    Hello, John!
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`renders correctly without a name 1`] = `
+<DocumentFragment>
+  <h1>
+    Hello, Guest!
+  </h1>
+</DocumentFragment>
+`;

@@ -1,0 +1,32 @@
+Simple Component Rendering
+
+Test if a component renders without crashing.
+Check if it renders the correct content.
+
+
+Component with Props
+
+Test if the component correctly displays passed props.
+Handle different prop types and values.
+
+Component with State
+
+Test state changes and corresponding UI updates.
+Simulate events to trigger state changes.
+
+Event Handling
+
+Simulate user events (clicks, input) and test the outcomes.
+Ensure callbacks are called when expected.
+
+
+Asynchronous Data
+
+Mock API calls and test loading, success, and error states.
+Use async and await in tests for asynchronous functions.
+
+
+Snapshot Testing
+
+Create snapshots to test if the UI does not change unexpectedly.
+Update snapshots when intentional changes are made.

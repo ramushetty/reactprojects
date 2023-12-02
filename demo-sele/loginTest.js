@@ -57,3 +57,50 @@ await logoutButton.click();
 }
 
 loginTest();
+
+
+
+
+class LoginPage {
+    constructor(driver) {
+        this.driver = driver;
+    }
+
+    get usernameField() {
+        return this.driver.findElement(By.id('username'));
+    }
+
+    get passwordField() {
+        return this.driver.findElement(By.id('password'));
+    }
+
+    get loginButton() {
+        return this.driver.findElement(By.id('login-button'));
+    }
+
+    async login(username, password) {
+        await this.usernameField.sendKeys(username);
+        await this.passwordField.sendKeys(password);
+        await this.loginButton.click();
+    }
+}
+
+
+
+
+const { Builder } = require('selenium-webdriver');
+const LoginPage = require('./LoginPage');
+
+(async function exampleTest() {
+    let driver = await new Builder().forBrowser('chrome').build();
+    let loginPage = new LoginPage(driver);
+
+    try {
+        await driver.get('http://example.com/login');
+        await loginPage.login('testuser', 'testpassword');
+
+        // Add more assertions or interactions here
+    } finally {
+        await driver.quit();
+    }
+})();
